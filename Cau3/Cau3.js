@@ -13,6 +13,7 @@ function vowel(arr) {
             if (arr[i] == 'a' || arr[i] == 'o' || 
             arr[i] == 'e' || arr[i] == 'u' || arr[i] == 'i') {
                 count++;
+                console.log(i);
                 continue;
             }
         }

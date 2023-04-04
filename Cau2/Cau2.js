@@ -1,5 +1,4 @@
-let array = [3, 6, 3, 1, 7, 7, 9, 3, 3, 1, 5, 7, 10, 8];
-let index = -1;
+let array = [3, 6, 18, 1, 13, 12, 9, 3, 16, 1, 5, 7, 10, 8];
 
 
 document.getElementById("outputNum").value = array.toString();
@@ -14,7 +13,7 @@ document.getElementById("btn").addEventListener("click", () => {
     }
 });
 function find_X(arr, x) {
-    console.log(x);
+    let index = -1;
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] == x) {
             index = i;
