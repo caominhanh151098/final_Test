@@ -1,0 +1,33 @@
+// let arrays = new Array();
+let arrays = [
+    [58, 72, 25, 45, 36, 49],
+    [47, 65, 30, 43, 70, 31],
+    [99, 72, 46, 37, 86, 73],
+    [97, 9, 62, 62, 12, 59],
+    [50, 59, 69, 44, 49, 12],
+    [47, 87, 99, 56, 57, 41]
+];
+
+// for (let i = 0; i < 6; i++) {
+//     arrays[i] = [0, 0, 0, 0, 0, 0];
+// }
+
+// for (let i = 0; i < 6; i++) {
+//     for (let j = 0; j < 6; j++) {
+//         arrays[i][j] = Math.floor(Math.random() * 100);
+//     }
+// }
+
+console.log(arrays);
+let bool = false;
+
+
+for (let i = 0; i < 6; i++) {
+    for (let j = 0; j < 6; j++) {
+        if (arrays[i][j] % 2 == 1){
+            bool = true;
+            break;
+        }
+    }
+}
+console.log(bool);

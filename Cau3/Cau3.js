@@ -8,16 +8,12 @@ document.getElementById("btn").addEventListener("click", () => {
 
 function vowel(arr) {
     let count = 0;
-    {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] == 'a' || arr[i] == 'o' || 
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 'a' || arr[i] == 'o' ||
             arr[i] == 'e' || arr[i] == 'u' || arr[i] == 'i') {
-                count++;
-                console.log(i);
-                continue;
-            }
+            count++;
+            console.log(i);
         }
-        return count;
     }
-
+    return count;
 }
